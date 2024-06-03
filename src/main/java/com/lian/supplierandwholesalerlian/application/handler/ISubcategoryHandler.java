@@ -5,7 +5,7 @@ import com.lian.supplierandwholesalerlian.application.dto.SubcategoryResponse;
 
 import java.util.List;
 
-public interface SubcategoryHandler {
+public interface ISubcategoryHandler {
     void saveSubcategoryInDb(SubcategoryRequest subcategoryRequest);
 
     List<SubcategoryResponse> getAllSubcategoriesFromDb();
@@ -14,5 +14,5 @@ public interface SubcategoryHandler {
 
     void updateSubcategoryInDb(SubcategoryRequest subcategoryRequest);
 
-    void deleteSubcategoryInDb(SubcategoryRequest subcategoryRequest);
+    void deleteSubcategoryInDb(Long subcategoryId);
 }

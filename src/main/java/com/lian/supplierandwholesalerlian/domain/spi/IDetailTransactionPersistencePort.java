@@ -4,7 +4,7 @@ import com.lian.supplierandwholesalerlian.domain.model.DetailTransaction;
 
 import java.util.List;
 
-public interface IDetailTransaction {
+public interface IDetailTransactionPersistencePort {
     void saveDetailTransaction(DetailTransaction detailTransaction);
 
     List<DetailTransaction> getAllDetailTransaction();

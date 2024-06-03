@@ -1,4 +1,4 @@
-package com.lian.supplierandwholesalerlian.infrastructure.rest;
+package com.lian.supplierandwholesalerlian.infrastructure.input.rest;
 
 import com.lian.supplierandwholesalerlian.application.dto.SubcategoryRequest;
 import com.lian.supplierandwholesalerlian.application.dto.SubcategoryResponse;

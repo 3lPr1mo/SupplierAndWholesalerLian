@@ -13,7 +13,7 @@ import lombok.RequiredArgsConstructor;
 import java.util.List;
 
 @RequiredArgsConstructor
-public class SubcategoryAdapter implements ISubcategoryPersistencePort {
+public class SubcategoryJpaAdapter implements ISubcategoryPersistencePort {
     private final ISubcategoryRepository subcategoryRepository;
     private final SubcategoryEntityMapper subcategoryEntityMapper;
 

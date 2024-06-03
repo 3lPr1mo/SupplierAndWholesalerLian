@@ -1,13 +1,13 @@
 package com.lian.supplierandwholesalerlian.domain.model;
 
-public class user {
+public class User {
     private Long id;
     private String firstname;
     private String lastname;
     private String email;
     private String password;
 
-    public user(Long id, String firstname, String lastname, String email, String password) {
+    public User(Long id, String firstname, String lastname, String email, String password) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;

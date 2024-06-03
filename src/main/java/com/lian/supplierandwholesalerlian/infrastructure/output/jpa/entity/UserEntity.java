@@ -1,15 +1,15 @@
 package com.lian.supplierandwholesalerlian.infrastructure.output.jpa.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "_user")
 @NoArgsConstructor
-@RequiredArgsConstructor
+@AllArgsConstructor
 @Setter
 @Getter
 public class UserEntity {
@@ -22,5 +22,8 @@ public class UserEntity {
     private String lastname;
     private String email;
     private String password;
+
+    @OneToMany(mappedBy = "user")
+    private List<TransactionEntity> transactions = new ArrayList<>();
 
 }
